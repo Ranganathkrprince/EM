@@ -24,7 +24,7 @@ public interface EmployRepository extends CrudRepository< Employ, Long>{
 	
 	@Modifying
 	@Transactional
-	@Query(value = "DELETE ex_employ WHERE id=?1", nativeQuery = true)
+	@Query(value = "DELETE FROM ex_employ WHERE id=?1", nativeQuery = true)
 	int deletedocument(Long id);
 
 
